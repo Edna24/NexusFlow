@@ -1,0 +1,36 @@
+.nf-shell {
+  min-height: 100svh;
+  background: var(--color-bg);
+}
+
+.nf-shell__main {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--sidebar-width);
+}
+
+.nf-shell__content {
+  flex: 1;
+  padding: var(--space-6);
+  padding-bottom: calc(var(--space-6) + env(safe-area-inset-bottom, 0px));
+}
+
+.nf-shell__content-inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 1023px) {
+  .nf-shell__main {
+    margin-left: 0;
+  }
+
+  .nf-shell__content {
+    padding: var(--space-4);
+    padding-bottom: calc(
+      var(--mobile-nav-height) + env(safe-area-inset-bottom, 0px) + var(--space-4)
+    );
+  }
+}

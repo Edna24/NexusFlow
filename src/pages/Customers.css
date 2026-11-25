@@ -1,0 +1,225 @@
+
+.nf-customers {
+    padding: 24px;
+    color: #172033;
+  }
+  
+  .nf-customers__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .nf-customers__eyebrow {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: #64748b;
+    margin-bottom: 7px;
+  }
+  
+  .nf-customers__heading h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  .nf-customers__heading p {
+    margin: 7px 0 0;
+    color: #64748b;
+  }
+  
+  .nf-customers__refresh {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid #dbe3ee;
+    border-radius: 10px;
+    background: white;
+    color: #334155;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .nf-customers__refresh:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+  
+  .nf-customers__stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  
+  .nf-customers__stat {
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    background: white;
+  }
+  
+  .nf-customers__stat span {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  
+  .nf-customers__stat strong {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .nf-customers__toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .nf-customers__search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    border: 1px solid #dbe3ee;
+    background: white;
+    border-radius: 10px;
+    padding: 0 12px;
+    min-height: 42px;
+  }
+  
+  .nf-customers__search svg {
+    color: #94a3b8;
+  }
+  
+  .nf-customers__search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .nf-customers__table-card {
+    border: 1px solid #e2e8f0;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  .nf-customers__table-wrap {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .nf-customers__table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+  }
+  
+  .nf-customers__table th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .nf-customers__table td {
+    padding: 15px 16px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 13px;
+  }
+  
+  .nf-customers__table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .nf-customers__table td:first-child strong {
+    color: #26354c;
+  }
+  
+  .nf-customers__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #64748b;
+  }
+  
+  .nf-customers__amount {
+    font-weight: 700;
+  }
+  
+  .nf-customers__state,
+  .nf-customers__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    color: #64748b;
+    text-align: center;
+    gap: 8px;
+    padding: 24px;
+  }
+  
+  .nf-customers__empty h3 {
+    color: #334155;
+    margin: 4px 0;
+  }
+  
+  .nf-customers__empty p {
+    margin: 0;
+  }
+  
+  .nf-customers__error {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 14px;
+    border: 1px solid #fecaca;
+    background: #fef2f2;
+    color: #991b1b;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  
+  @media (max-width: 900px) {
+    .nf-customers__stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .nf-customers {
+      padding: 16px;
+    }
+  
+    .nf-customers__heading {
+      flex-direction: column;
+    }
+  
+    .nf-customers__stats {
+      gap: 10px;
+    }
+  
+    .nf-customers__stat {
+      padding: 14px;
+    }
+  
+    .nf-customers__stat strong {
+      font-size: 18px;
+    }
+  }
+  

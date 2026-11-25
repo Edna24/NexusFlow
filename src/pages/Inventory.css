@@ -1,0 +1,377 @@
+
+.nf-inventory {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: var(--color-text);
+  }
+  
+  .nf-inventory__heading,
+  .nf-inventory__catalogue-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  
+  .nf-inventory__eyebrow {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: .08em;
+  }
+  
+  .nf-inventory__heading h1 {
+    margin: 5px 0;
+    font-size: var(--font-size-xl);
+  }
+  
+  .nf-inventory__heading p,
+  .nf-inventory__catalogue-header p {
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+  }
+  
+  .nf-inventory__refresh {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+    cursor: pointer;
+  }
+  
+  .nf-inventory__refresh:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+  
+  .nf-inventory__stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+  
+  .nf-inventory__stat {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    padding: 20px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+  
+  .nf-inventory__stat-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: var(--radius-md);
+    background: var(--color-primary-soft);
+    color: var(--color-primary);
+  }
+  
+  .nf-inventory__stat-icon--warning {
+    background: var(--color-warning-soft);
+    color: var(--color-warning);
+  }
+  
+  .nf-inventory__stat-icon--danger {
+    background: var(--color-danger-soft);
+    color: var(--color-danger);
+  }
+  
+  .nf-inventory__stat span {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-xs);
+  }
+  
+  .nf-inventory__stat strong {
+    display: block;
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  
+  .nf-inventory__catalogue {
+    overflow: hidden;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+  
+  .nf-inventory__catalogue-header {
+    padding: 20px;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .nf-inventory__catalogue-header h2 {
+    margin: 0 0 5px;
+    font-size: var(--font-size-lg);
+  }
+  
+  .nf-inventory__toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+  
+  .nf-inventory__search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 10px;
+    min-width: 0;
+    padding: 0 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+  }
+  
+  .nf-inventory__search input {
+    width: 100%;
+    min-width: 0;
+    padding: 11px 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: var(--color-text);
+  }
+  
+  .nf-inventory__toolbar select {
+    min-height: 42px;
+    max-width: 210px;
+    padding: 0 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-surface);
+    color: var(--color-text);
+  }
+  
+  .nf-inventory__table-wrap {
+    overflow-x: auto;
+  }
+  
+  .nf-inventory__table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .nf-inventory__table th,
+  .nf-inventory__table td {
+    padding: 15px 20px;
+    border-top: 1px solid var(--color-border-subtle);
+    font-size: var(--font-size-sm);
+  }
+  
+  .nf-inventory__table th {
+    background: var(--color-bg);
+    color: var(--color-text-muted);
+    font-weight: var(--font-weight-medium);
+  }
+  
+  .nf-inventory__table td strong,
+  .nf-inventory__table td small {
+    display: block;
+  }
+  
+  .nf-inventory__table td small {
+    margin-top: 4px;
+    max-width: 220px;
+    overflow: hidden;
+    color: var(--color-text-muted);
+    text-overflow: ellipsis;
+  }
+  
+  .nf-inventory__state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 190px;
+    padding: 24px;
+    color: var(--color-text-muted);
+    text-align: center;
+  }
+  
+  .nf-inventory__state strong {
+    color: var(--color-text);
+  }
+  
+  .nf-inventory__state p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+  }
+  
+  .nf-inventory__error {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border: 1px solid var(--color-danger);
+    border-radius: var(--radius-md);
+    background: var(--color-danger-soft);
+    color: var(--color-danger);
+    font-size: var(--font-size-sm);
+  }
+  
+  .nf-inventory__error button {
+    margin-left: auto;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px) {
+    .nf-inventory__stats {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .nf-inventory {
+      gap: 16px;
+    }
+  
+    .nf-inventory__heading {
+      align-items: flex-start;
+    }
+  
+    .nf-inventory__stats {
+      gap: 10px;
+    }
+  
+    .nf-inventory__stat {
+      padding: 13px;
+      gap: 9px;
+    }
+  
+    .nf-inventory__stat-icon {
+      width: 34px;
+      height: 34px;
+    }
+  
+    .nf-inventory__stat strong {
+      font-size: 18px;
+    }
+  
+    .nf-inventory__toolbar {
+      align-items: stretch;
+      flex-direction: column;
+      padding: 12px;
+    }
+  
+    .nf-inventory__toolbar select {
+      max-width: none;
+    }
+  }
+  .nf-inventory__actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nf-inventory__add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .nf-inventory__add:hover {
+    background: var(--color-primary-hover);
+  }
+  
+  .nf-inventory__add:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .nf-inventory__form {
+    display: grid;
+    gap: 14px;
+  }
+  
+  .nf-inventory__form label {
+    display: grid;
+    gap: 6px;
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .nf-inventory__form input,
+  .nf-inventory__form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-surface);
+    color: var(--color-text);
+    font: inherit;
+    font-weight: 400;
+    box-sizing: border-box;
+  }
+  
+  .nf-inventory__form input:focus,
+  .nf-inventory__form textarea:focus {
+    outline: 2px solid var(--color-primary-soft);
+    border-color: var(--color-primary);
+  }
+  
+  .nf-inventory__modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .nf-inventory__modal-actions button {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .nf-inventory__modal-actions button[type="submit"] {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+  }
+  
+  .nf-inventory__modal-actions button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+  
+  @media (max-width: 600px) {
+    .nf-inventory__actions {
+      width: 100%;
+    }
+  
+    .nf-inventory__add,
+    .nf-inventory__refresh {
+      flex: 1;
+    }
+  }

@@ -1,0 +1,36 @@
+.nf-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.nf-badge--neutral {
+  color: var(--color-text-muted);
+  background: #eef2f7;
+}
+
+.nf-badge--success {
+  color: var(--color-success);
+  background: var(--color-success-soft);
+}
+
+.nf-badge--warning {
+  color: #a66f10;
+  background: var(--color-warning-soft);
+}
+
+.nf-badge--danger {
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+}
+
+.nf-badge--primary {
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+}

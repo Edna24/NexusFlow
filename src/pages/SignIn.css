@@ -1,0 +1,75 @@
+.nf-signin {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  background:
+    radial-gradient(circle at top right, rgba(36, 87, 197, 0.08), transparent 40%),
+    var(--color-bg);
+}
+
+.nf-signin__card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-8) var(--space-6);
+}
+
+.nf-signin__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.nf-signin__mark {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+}
+
+.nf-signin__product {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-navy);
+}
+
+.nf-signin__org {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.nf-signin__title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-2);
+}
+
+.nf-signin__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.nf-signin__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.nf-signin__error {
+  font-size: var(--font-size-sm);
+  color: var(--color-danger);
+  background: var(--color-danger-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
